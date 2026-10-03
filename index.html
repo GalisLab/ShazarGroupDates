@@ -9,8 +9,8 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="הדרכה שז&quot;ר">
 <link rel="manifest" href="manifest.json">
-<link rel="icon" href="icons/icon-192.png">
-<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <title>תאריכי הדרכה קבוצתית שז"ר</title>
 <meta name="description" content="מתי הקבוצה נפגשת">
 <meta property="og:title" content="תאריכי הדרכה קבוצתית שז&quot;ר">
@@ -153,24 +153,25 @@
     position: fixed;
     top: calc(16px + env(safe-area-inset-top, 0px));
     right: 16px;
-    height: 40px;
-    padding: 0 14px;
-    border-radius: 20px;
-    border: 1px solid rgba(255,255,255,0.5);
-    background: rgba(255,255,255,0.25);
+    height: 30px;
+    padding: 0 12px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.45);
+    background: rgba(255,255,255,0.22);
     color: var(--bg-ink);
-    font-size: 0.85rem;
-    font-weight: 700;
+    font-size: 0.74rem;
+    font-weight: 600;
     display: none;
     align-items: center;
-    gap: 6px;
+    gap: 5px;
     cursor: pointer;
     font-family: 'Assistant', sans-serif;
+    letter-spacing: 0.1px;
   }
   .install-btn.visible { display: inline-flex; }
   .install-tip {
     position: fixed;
-    top: calc(62px + env(safe-area-inset-top, 0px));
+    top: calc(54px + env(safe-area-inset-top, 0px));
     right: 16px;
     max-width: 230px;
     background: var(--card);
@@ -435,9 +436,7 @@
       installBtn.classList.remove("visible");
       return;
     }
-    installTip.textContent = isIOS
-      ? 'בספארי: לחצו על כפתור השיתוף ואז "הוסף למסך הבית".'
-      : 'בכרום: לחצו על התפריט (שלוש הנקודות) ואז "התקנת אפליקציה" או "הוספה למסך הבית".';
+    installTip.textContent = "ההתקנה אינה זמינה בדפדפן הזה כרגע.";
     installTip.classList.toggle("visible");
   });
 
