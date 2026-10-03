@@ -11,7 +11,12 @@
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icons/icon-192.png">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-<title>הקבוצה נפגשת השבוע?</title>
+<title>תאריכי הדרכה קבוצתית שז"ר</title>
+<meta name="description" content="מתי הקבוצה נפגשת">
+<meta property="og:title" content="תאריכי הדרכה קבוצתית שז&quot;ר">
+<meta property="og:description" content="מתי הקבוצה נפגשת">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://galislab.github.io/ShazarGroupDates/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700&family=Assistant:wght@400;600;700&display=swap" rel="stylesheet">
@@ -301,7 +306,7 @@
     answerWord.classList.add("no");
     const next = meetingDates.find(d => d >= today);
     answerSub.innerHTML = next
-      ? `אין פגישה קבוצתית השבוע. הפגישה הבאה: <span class="answer-date">${formatDate(next)}</span>`
+      ? `אין פגישה קבוצתית השבוע.<br>הפגישה הבאה: <span class="answer-date">${formatDate(next)}</span>`
       : "אין הדרכות קבוצתיות קרובות ברשימה.";
   }
 
