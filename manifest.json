@@ -1,0 +1,25 @@
+{
+  "name": "הדרכה שז\"ר",
+  "short_name": "הדרכה שז\"ר",
+  "description": "מתי הקבוצה נפגשת",
+  "dir": "rtl",
+  "lang": "he",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#2DD4BF",
+  "theme_color": "#2DD4BF",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
